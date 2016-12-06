@@ -7,48 +7,43 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float speed;
-    private Vector3 moveData = Vector3.zero;
-    private Rigidbody PlayerRB;
-    private Camera mainCam;
-    public GunController gun;
     public bool onGamepad = false;
+
+    private Vector3 moveData = Vector3.zero;
+    private Rigidbody playerRB;
+    private Camera mainCam;
+
+    [SerializeField]
+    public CombatItem primary;
+    public CombatItem secondary;
+    private CombatItem current;
+    private bool onPrimary = true;
+   
 
     void Start()
     {
-        PlayerRB = GetComponent<Rigidbody>();
-        mainCam = FindObjectOfType<Camera>();   
+        playerRB = GetComponent<Rigidbody>();
+        mainCam = FindObjectOfType<Camera>();
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate ()
     {                         
         checkConrolMethod();
-        Move();
+        setCurrentItem();
+        Move();                        
 
         if (onGamepad)
         {
             GamepadRotate();
-            GamepadFire();
+            GPAction1(current);       
         }
         else
         {
             Rotate();
-            Fire();
-        }
-	}
-
-    void Fire()
-    {
-        float firing = Input.GetAxisRaw("Fire");
-        if(firing != 0f)
-        {
-            gun.isFiring = true;
-        }
-        else
-        {
-            gun.isFiring = false;
-        }
-    }
+            Action1(current);                 
+        }                                        
+    }       
 
     void Move()
     {
@@ -57,7 +52,7 @@ public class PlayerController : MonoBehaviour
         
         moveData.Set(x, 0f, z);
         moveData = moveData.normalized * speed;
-        PlayerRB.MovePosition(PlayerRB.position + moveData * Time.deltaTime);
+        playerRB.MovePosition(playerRB.position + moveData * Time.deltaTime);
     }
 
     void Rotate()
@@ -75,23 +70,11 @@ public class PlayerController : MonoBehaviour
 
     void GamepadRotate()
     {
-        Vector3 direction = Vector3.right * Input.GetAxisRaw("GPLookHorizontal") + Vector3.forward * -Input.GetAxisRaw("GPLookVertical");
+        Vector3 direction = Vector3.right * Input.GetAxisRaw("GPLookHorizontal") 
+                          + Vector3.forward * -Input.GetAxisRaw("GPLookVertical");
         if(direction.sqrMagnitude > 0.0f)
         {
             transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
-        }
-    }
-
-    void GamepadFire()
-    {
-        float firing = Input.GetAxis("GPFire");
-        if (firing == -1)
-        {
-            gun.isFiring = true;
-        }
-        else
-        {
-            gun.isFiring = false;
         }
     }
 
@@ -99,11 +82,35 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetJoystickNames().Length != 0)
             onGamepad = true;
-        if (Input.GetMouseButtonDown(0)
-            || Input.GetMouseButtonDown(1)
-            || Input.GetMouseButtonDown(2)
+        if (Input.GetAxisRaw("Fire") != 0
             || Input.GetAxisRaw("Mouse X") != 0
             || Input.GetAxisRaw("Mouse X") != 0)
             onGamepad = false;
+    }
+
+    void OnCollisionEnter(Collision c)
+    {
+        if(c.gameObject.name == "laserBullet(Clone)")
+        {
+            transform.position = new Vector3(0, transform.position.y, 0);
+        }
+    }
+
+    void Action1(CombatItem c)
+    {
+        if (Input.GetAxisRaw("Fire") != 0) c.Action1(true);      
+        else c.Action1(false);
+    }
+
+    void GPAction1(CombatItem c)
+    {
+        if (Input.GetAxisRaw("GPFire") == -1) c.Action1(true);
+        else c.Action1(false);
+    }
+
+    void setCurrentItem()
+    {
+        if(!onPrimary) current = secondary;
+        else current = primary;
     }
 }

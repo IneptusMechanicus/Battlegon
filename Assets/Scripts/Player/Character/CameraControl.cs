@@ -10,6 +10,8 @@ public class CameraControl : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        transform.position = new Vector3(target.position.x, target.position.y + 20, target.position.z - 8);
+        transform.rotation = Quaternion.Euler(70, 0, 0);
         offset = transform.position - target.position;
 	}
 	
