@@ -1,47 +1,56 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
 
 public class PlayerController : MonoBehaviour
 {
 
     [SerializeField]
-    private float speed;
-    public bool onGamepad = false;
+    private float Speed;
+    public bool OnGamepad = false;
+    private bool OnPrimary = true;
 
-    private Vector3 moveData = Vector3.zero;
-    private Rigidbody playerRB;
-    private Camera mainCam;
+    private Vector3 MoveData = Vector3.zero;
+    private Rigidbody PlayerRB;
+    public Camera PlayerCam;
+    public Transform gunOrigin;
+    
+    public CombatItem Primary;
+    public CombatItem Secondary;
+    private CombatItem Current;
 
-    [SerializeField]
-    public CombatItem primary;
-    public CombatItem secondary;
-    private CombatItem current;
-    private bool onPrimary = true;
+    private string PrimaryWeapon;
+    private string SecondaryWeapon;
    
 
     void Start()
     {
-        playerRB = GetComponent<Rigidbody>();
-        mainCam = FindObjectOfType<Camera>();
+       
+        PlayerRB = GetComponent<Rigidbody>();
+        PlayerCam = Instantiate(PlayerCam, transform.position, transform.rotation) as Camera;
+        PlayerCam.GetComponent<CameraControl>().target = transform;
+        PlayerCam.transform.parent = transform.parent;
     }
 
     
     void FixedUpdate ()
-    {                         
+    {
+        gameObject.SetActive(true);
         checkConrolMethod();
         setCurrentItem();
-        Move();                        
-
-        if (onGamepad)
+        Move();
+        if (Current != null)
         {
-            GamepadRotate();
-            GPAction1(current);       
+            Action1(Current);
+        }
+
+        if (OnGamepad)
+        {
+            GamepadRotate();     
         }
         else
         {
-            Rotate();
-            Action1(current);                 
+            Rotate();                 
         }                                        
     }       
 
@@ -50,14 +59,14 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
         
-        moveData.Set(x, 0f, z);
-        moveData = moveData.normalized * speed;
-        playerRB.MovePosition(playerRB.position + moveData * Time.deltaTime);
+        MoveData.Set(x, 0f, z);
+        MoveData = MoveData.normalized * Speed;
+        PlayerRB.MovePosition(PlayerRB.position + MoveData * Time.deltaTime);
     }
 
     void Rotate()
     {
-        Ray camRay = mainCam.ScreenPointToRay(Input.mousePosition);
+        Ray camRay = PlayerCam.ScreenPointToRay(Input.mousePosition);
         Plane floor = new Plane(Vector3.up, Vector3.zero);
         float rayL;
 
@@ -81,16 +90,16 @@ public class PlayerController : MonoBehaviour
     void checkConrolMethod()
     {
         if (Input.GetJoystickNames().Length != 0)
-            onGamepad = true;
+            OnGamepad = true;
         if (Input.GetAxisRaw("Fire") != 0
             || Input.GetAxisRaw("Mouse X") != 0
             || Input.GetAxisRaw("Mouse X") != 0)
-            onGamepad = false;
+            OnGamepad = false;
     }
 
     void OnCollisionEnter(Collision c)
     {
-        if(c.gameObject.name == "laserBullet(Clone)")
+        if(c.gameObject.name == "AssaultRifleBullet(Clone)")
         {
             transform.position = new Vector3(0, transform.position.y, 0);
         }
@@ -98,19 +107,24 @@ public class PlayerController : MonoBehaviour
 
     void Action1(CombatItem c)
     {
-        if (Input.GetAxisRaw("Fire") != 0) c.Action1(true);      
+        if (Input.GetAxisRaw("Fire") != 0 || Input.GetAxisRaw("GPFire") == -1) c.Action1(true);      
         else c.Action1(false);
-    }
-
-    void GPAction1(CombatItem c)
-    {
-        if (Input.GetAxisRaw("GPFire") == -1) c.Action1(true);
-        else c.Action1(false);
-    }
+    }                                                                         
 
     void setCurrentItem()
     {
-        if(!onPrimary) current = secondary;
-        else current = primary;
+        if(!OnPrimary) Current = Secondary;
+        else Current = Primary;
+    }          
+
+    void setWeapons(string Primary, string Secondary)
+    {
+        PrimaryWeapon = Primary;
+        SecondaryWeapon = Secondary;
+    }
+
+    void OnDestroy()
+    {
+        Destroy(PlayerCam);
     }
 }
