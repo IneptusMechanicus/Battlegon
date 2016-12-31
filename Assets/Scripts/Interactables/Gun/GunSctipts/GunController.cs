@@ -8,18 +8,27 @@ public class GunController : CombatItem
 
     
     [SerializeField]
-    protected Transform Origin;
+    Transform Origin;
+    [SerializeField]
+    Bullet b;
 
-    protected float ROFCountDown;
-    protected float TimeBetweenShots;
-    protected float RateOfFire;
+    float ROFCountDown;
+    float TimeBetweenShots;
+    public float RateOfFire;
+    bool SingleShot;
+    bool IsFiring;               
 
-    protected bool SingleShot;
-    protected bool IsFiring;
-    protected bool IsHitscanGun;
-    
-    
-    public void Fire(bool firing, Bullet bullet)
+    void Start()
+    {
+        TimeBetweenShots = 60 / RateOfFire;
+    }
+
+    void Update()
+    {
+        Fire(IsFiring);
+    }
+
+    public void Fire(bool firing)
     {
         ROFCountDown -= Time.deltaTime;
         if (IsFiring)
@@ -27,7 +36,7 @@ public class GunController : CombatItem
             if (ROFCountDown <= 0)
             {
                 ROFCountDown = TimeBetweenShots;
-                Bullet newBullet = Instantiate(bullet, Origin.position, Origin.rotation) as Bullet;   
+                Bullet newBullet = Instantiate(b, Origin.position, Origin.rotation) as Bullet;   
             }
         }          
     }

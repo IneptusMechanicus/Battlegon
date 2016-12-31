@@ -4,39 +4,21 @@ using System.Collections;
 public class Bullet : MonoBehaviour
 {
 
-    protected float Speed;
-    protected float Range;
-    protected Vector3 initPosition;
+    public float Speed;
+    public float Range;
+    Vector3 initPosition; 
 
-
-    void SetBulletOrigin()
+    void Start()
     {
-        initPosition = transform.position;
+        initPosition = transform.position;     
     }
 
-    void hitscanFly()
+    void FixedUpdate()
     {
-        RaycastHit hit;
-    }
-
-
-    void ProjectileFly()
-    {
-
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
         if (Vector3.Distance(transform.position, initPosition) > Range)
         {
             Destroy(this.gameObject);
         }
-    }
-
-    public virtual void Fly()
-    {
-        ProjectileFly();
-    }
-
-    void FixedUpdate()
-    {
-        Fly();
     }
 }

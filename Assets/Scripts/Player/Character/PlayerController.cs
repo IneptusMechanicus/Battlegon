@@ -17,10 +17,6 @@ public class PlayerController : MonoBehaviour
     
     public CombatItem Primary;
     public CombatItem Secondary;
-    private CombatItem Current;
-
-    private string PrimaryWeapon;
-    private string SecondaryWeapon;
    
 
     void Start()
@@ -36,14 +32,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate ()
     {
         gameObject.SetActive(true);
-        checkConrolMethod();
-        setCurrentItem();
+        checkConrolMethod();  
         Move();
-        if (Current != null)
-        {
-            Action1(Current);
-        }
-
+        if (OnPrimary && Primary != null) Action1(Primary);
+        else if(!OnPrimary && Secondary != null) Action1(Secondary);
         if (OnGamepad)
         {
             GamepadRotate();     
@@ -99,10 +91,24 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter(Collision c)
     {
-        if(c.gameObject.name == "AssaultRifleBullet(Clone)")
+        if(c.gameObject.tag == "Bullet")
         {
             transform.position = new Vector3(0, transform.position.y, 0);
         }
+        else if(c.gameObject.tag == "CombatItem")
+        {               
+            PickUp(c.gameObject);
+        }
+    }
+
+    void PickUp(GameObject g)
+    {
+        g.transform.parent = transform;
+        g.transform.position = gunOrigin.transform.position;
+        g.transform.rotation = gunOrigin.transform.rotation;
+        CombatItem c = g.GetComponent<CombatItem>();
+        if (OnPrimary) Primary = c;
+        else Secondary = c;
     }
 
     void Action1(CombatItem c)
@@ -110,21 +116,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Fire") != 0 || Input.GetAxisRaw("GPFire") == -1) c.Action1(true);      
         else c.Action1(false);
     }                                                                         
-
-    void setCurrentItem()
-    {
-        if(!OnPrimary) Current = Secondary;
-        else Current = Primary;
-    }          
-
-    void setWeapons(string Primary, string Secondary)
-    {
-        PrimaryWeapon = Primary;
-        SecondaryWeapon = Secondary;
-    }
+          
 
     void OnDestroy()
     {
-        Destroy(PlayerCam);
+        PlayerCam.GetComponent<CameraControl>().enabled = false;
     }
 }
