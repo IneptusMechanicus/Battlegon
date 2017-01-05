@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float Speed;
     public bool OnGamepad = false;
-    private bool OnPrimary = true;
+    public bool OnPrimary = true;
 
     private Vector3 MoveData = Vector3.zero;
     private Rigidbody PlayerRB;
@@ -107,8 +107,27 @@ public class PlayerController : MonoBehaviour
         g.transform.position = gunOrigin.transform.position;
         g.transform.rotation = gunOrigin.transform.rotation;
         CombatItem c = g.GetComponent<CombatItem>();
-        if (OnPrimary) Primary = c;
-        else Secondary = c;
+        c.equiped = true;
+        if (OnPrimary)
+        {
+            if (Primary != null)
+            {
+                Drop(Primary.gameObject);
+            }
+            Primary = c;
+        }
+        else
+        {
+            Drop(Secondary.gameObject);
+            Secondary = c;
+        }
+    }
+
+    void Drop(GameObject g)
+    {
+        g.transform.parent = null;
+        if (OnPrimary) Primary = null;
+        else Secondary = null;
     }
 
     void Action1(CombatItem c)
@@ -121,5 +140,7 @@ public class PlayerController : MonoBehaviour
     void OnDestroy()
     {
         PlayerCam.GetComponent<CameraControl>().enabled = false;
+        Drop(Primary.gameObject);
+        Drop(Secondary.gameObject);
     }
 }

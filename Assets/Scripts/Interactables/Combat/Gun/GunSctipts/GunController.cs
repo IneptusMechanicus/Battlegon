@@ -1,22 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.Networking;
 
 public class GunController : CombatItem
 {                                          
-    
-
-    
     [SerializeField]
-    Transform Origin;
+    public Transform Origin;
     [SerializeField]
-    Bullet b;
+    GameObject Bullet;   
+    public GameObject ToSpawn;              
 
     float ROFCountDown;
     float TimeBetweenShots;
     public float RateOfFire;
     bool SingleShot;
-    bool IsFiring;               
+    bool IsFiring;          
 
     void Start()
     {
@@ -25,10 +24,10 @@ public class GunController : CombatItem
 
     void Update()
     {
-        Fire(IsFiring);
+        ToSpawn = Fire();                                
     }
 
-    public void Fire(bool firing)
+    public GameObject Fire()
     {
         ROFCountDown -= Time.deltaTime;
         if (IsFiring)
@@ -36,14 +35,35 @@ public class GunController : CombatItem
             if (ROFCountDown <= 0)
             {
                 ROFCountDown = TimeBetweenShots;
-                Bullet newBullet = Instantiate(b, Origin.position, Origin.rotation) as Bullet;   
+                return Bullet; 
             }
-        }          
+            return null;
+        }
+        return null;
+    }
+
+    public override void SpawnProjectile()
+    {
+        if(ToSpawn != null)
+        {
+
+        }
+    }
+
+    [Command]
+    public void CmdNetProjectile()
+    {
+        if (ToSpawn != null)
+        {
+            GameObject projectile = Instantiate(ToSpawn, Origin.position, Origin.rotation) as GameObject;
+            NetworkServer.Spawn(projectile);
+        }
     }
 
     public override void Action1(bool on)
     {
         IsFiring = on;
+        CmdNetProjectile();     
     }
 
     public override void Action2(bool on)
