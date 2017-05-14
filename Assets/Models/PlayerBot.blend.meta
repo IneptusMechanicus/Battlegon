@@ -1,0 +1,1721 @@
+fileFormatVersion: 2
+guid: 350fe19648ff5e34b8f23d2ca60f61b4
+timeCreated: 1494436143
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: armDownLeft
+    100004: armDownRight
+    100006: armUpLeft
+    100008: armUpRight
+    100010: Cube
+    100012: Cube_001
+    100014: Cube_002
+    100016: Cube_003
+    100018: Cylinder
+    100020: Cylinder_001
+    100022: Cylinder_002
+    100024: Cylinder_003
+    100026: Cylinder_004
+    100028: Cylinder_005
+    100030: Cylinder_006
+    100032: Cylinder_007
+    100034: Cylinder_008
+    100036: Cylinder_009
+    100038: Cylinder_010
+    100040: Cylinder_011
+    100042: Cylinder_012
+    100044: Cylinder_013
+    100046: Cylinder_014
+    100048: Cylinder_015
+    100050: legDownLeft
+    100052: legDownRight
+    100054: legUpLeft
+    100056: legUpRight
+    100058: //RootNode
+    100060: root
+    100062: Sphere
+    100064: Sphere_001
+    100066: Sphere_002
+    100068: Sphere_003
+    100070: Sphere_004
+    100072: Sphere_005
+    100074: Sphere_006
+    100076: Sphere_007
+    100078: Sphere_008
+    100080: Sphere_009
+    100082: Sphere_010
+    100084: UpperBody
+    400000: Armature
+    400002: armDownLeft
+    400004: armDownRight
+    400006: armUpLeft
+    400008: armUpRight
+    400010: Cube
+    400012: Cube_001
+    400014: Cube_002
+    400016: Cube_003
+    400018: Cylinder
+    400020: Cylinder_001
+    400022: Cylinder_002
+    400024: Cylinder_003
+    400026: Cylinder_004
+    400028: Cylinder_005
+    400030: Cylinder_006
+    400032: Cylinder_007
+    400034: Cylinder_008
+    400036: Cylinder_009
+    400038: Cylinder_010
+    400040: Cylinder_011
+    400042: Cylinder_012
+    400044: Cylinder_013
+    400046: Cylinder_014
+    400048: Cylinder_015
+    400050: legDownLeft
+    400052: legDownRight
+    400054: legUpLeft
+    400056: legUpRight
+    400058: //RootNode
+    400060: root
+    400062: Sphere
+    400064: Sphere_001
+    400066: Sphere_002
+    400068: Sphere_003
+    400070: Sphere_004
+    400072: Sphere_005
+    400074: Sphere_006
+    400076: Sphere_007
+    400078: Sphere_008
+    400080: Sphere_009
+    400082: Sphere_010
+    400084: UpperBody
+    4300000: Cylinder_010
+    4300002: Sphere_007
+    4300004: Cylinder_007
+    4300006: Cube_003
+    4300008: Cube_002
+    4300010: Cube_001
+    4300012: Cube
+    4300014: Cylinder_015
+    4300016: Sphere_010
+    4300018: Cylinder_014
+    4300020: Cylinder_013
+    4300022: Sphere_009
+    4300024: Cylinder_012
+    4300026: Cylinder_011
+    4300028: Sphere_008
+    4300030: Sphere_006
+    4300032: Sphere_005
+    4300034: Cylinder_009
+    4300036: Sphere_004
+    4300038: Cylinder_008
+    4300040: Sphere_003
+    4300042: Sphere_002
+    4300044: Cylinder_006
+    4300046: Cylinder_005
+    4300048: Cylinder_004
+    4300050: Cylinder_003
+    4300052: Cylinder_002
+    4300054: Cylinder_001
+    4300056: Cylinder
+    4300058: Sphere_001
+    4300060: Sphere
+    7400000: Walk
+    7400002: ArmatureAction
+    7400004: Idle
+    7400006: MeleeStrike
+    7400008: RaiseShield
+    7400010: ShieldRaised
+    7400012: LowerShield
+    7400014: PickUpGun
+    7400016: GunUp
+    7400018: LowerGun
+    7400020: Crouch
+    7400022: Crouched
+    7400024: GetUp
+    9500000: //RootNode
+    13700000: Cube
+    13700002: Cube_001
+    13700004: Cube_002
+    13700006: Cube_003
+    13700008: Cylinder
+    13700010: Cylinder_001
+    13700012: Cylinder_002
+    13700014: Cylinder_003
+    13700016: Cylinder_004
+    13700018: Cylinder_005
+    13700020: Cylinder_006
+    13700022: Cylinder_007
+    13700024: Cylinder_008
+    13700026: Cylinder_009
+    13700028: Cylinder_010
+    13700030: Cylinder_011
+    13700032: Cylinder_012
+    13700034: Cylinder_013
+    13700036: Cylinder_014
+    13700038: Cylinder_015
+    13700040: Sphere
+    13700042: Sphere_001
+    13700044: Sphere_002
+    13700046: Sphere_003
+    13700048: Sphere_004
+    13700050: Sphere_005
+    13700052: Sphere_006
+    13700054: Sphere_007
+    13700056: Sphere_008
+    13700058: Sphere_009
+    13700060: Sphere_010
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: -1
+      lastFrame: 129
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Default Take
+      firstFrame: 20
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MeleeStrike
+      takeName: Default Take
+      firstFrame: 36
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RaiseShield
+      takeName: Default Take
+      firstFrame: 48
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ShieldRaised
+      takeName: Default Take
+      firstFrame: 54
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LowerShield
+      takeName: Default Take
+      firstFrame: 58
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PickUpGun
+      takeName: Default Take
+      firstFrame: 78
+      lastFrame: 86
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GunUp
+      takeName: Default Take
+      firstFrame: 84
+      lastFrame: 92
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LowerGun
+      takeName: Default Take
+      firstFrame: 92
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouch
+      takeName: Default Take
+      firstFrame: 104
+      lastFrame: 112
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouched
+      takeName: Default Take
+      firstFrame: 112
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GetUp
+      takeName: Default Take
+      firstFrame: 120
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/legUpLeft
+        weight: 1
+      - path: Armature/root/legUpLeft/legDownLeft
+        weight: 1
+      - path: Armature/root/legUpRight
+        weight: 1
+      - path: Armature/root/legUpRight/legDownRight
+        weight: 1
+      - path: Armature/root/UpperBody
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpLeft/armDownLeft
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight
+        weight: 1
+      - path: Armature/root/UpperBody/armUpRight/armDownRight
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: Cube_003
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      - path: Cylinder_001
+        weight: 1
+      - path: Cylinder_002
+        weight: 1
+      - path: Cylinder_003
+        weight: 1
+      - path: Cylinder_004
+        weight: 1
+      - path: Cylinder_005
+        weight: 1
+      - path: Cylinder_006
+        weight: 1
+      - path: Cylinder_007
+        weight: 1
+      - path: Cylinder_008
+        weight: 1
+      - path: Cylinder_009
+        weight: 1
+      - path: Cylinder_010
+        weight: 1
+      - path: Cylinder_011
+        weight: 1
+      - path: Cylinder_012
+        weight: 1
+      - path: Cylinder_013
+        weight: 1
+      - path: Cylinder_014
+        weight: 1
+      - path: Cylinder_015
+        weight: 1
+      - path: Sphere
+        weight: 1
+      - path: Sphere_001
+        weight: 1
+      - path: Sphere_002
+        weight: 1
+      - path: Sphere_003
+        weight: 1
+      - path: Sphere_004
+        weight: 1
+      - path: Sphere_005
+        weight: 1
+      - path: Sphere_006
+        weight: 1
+      - path: Sphere_007
+        weight: 1
+      - path: Sphere_008
+        weight: 1
+      - path: Sphere_009
+        weight: 1
+      - path: Sphere_010
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
