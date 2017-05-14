@@ -1,0 +1,70 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon HD 8600/8700M (ID=0x6600)
+    Vendor:   ATI
+    VRAM:     2029 MB
+    Driver:   22.19.165.1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\Mono.Nat.dll (this message is harmless)
+Loading C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\Mono.Nat.dll into Unity Child Domain
+- Completed reload, in  0.022 seconds
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Ivo Gerginov\Documents\Projects\Battlegon\Battlegon\Builds\Client\GameClient_Data\GameClient_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 2806x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.065714 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2080 -> priority: 1 
+  Thread -> id: 268 -> priority: 1 
+  Thread -> id: 3644 -> priority: 1 
+  Thread -> id: 374c -> priority: 1 
+-20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+-100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
